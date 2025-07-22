@@ -94,3 +94,27 @@ button:focus-visible {
     background-color: #f9f9f9;
   }
 }
+
+.colour-container {
+  display: flex;
+}
+.colour-example {
+  height: 200px;
+  width: 200px;
+}
+
+#c-002642 {
+  background-color: #002642;
+}
+#c-840032 {
+  background-color: #840032;
+}
+#c-E59500 {
+  background-color: #e59500;
+}
+#c-E5DADA {
+  background-color: #fffae3;
+}
+#c-02040F {
+  background-color: #02040f;
+}

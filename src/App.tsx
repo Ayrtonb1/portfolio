@@ -16,6 +16,13 @@ function App(): React.JSX.Element {
       <Skills />
       <Projects />
       <Contact />
+      <div className="colour-container">
+        <div className="colour-example" id="c-002642"></div>
+        <div className="colour-example" id="c-840032"></div>
+        <div className="colour-example" id="c-E59500"></div>
+        <div className="colour-example" id="c-E5DADA"></div>
+        <div className="colour-example" id="c-02040F"></div>
+      </div>
     </>
   );
 }
