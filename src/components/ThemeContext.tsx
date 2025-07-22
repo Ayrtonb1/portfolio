@@ -13,28 +13,28 @@ interface ThemeContextType {
 
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
+export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
+  const [mode, setMode] = useState<Mode>("light");
+  const [palette, setPalette] = useState<Palette>("initial");
 
-export const ThemeProvider = ({children}: {children: React.ReactNode}) => {
+  const toggleMode = () =>
+    setMode((prev) => (prev === "light" ? "dark" : "light"));
 
-    const [mode, setMode] = useState<Mode>("light");
-    const [palette, setPalette] = useState<Palette>("initial")
+  //re-render the page on mode or palette change
+  //find current theme from the themes object
+  //change style based on current value
 
+  useEffect(() => {
+    const currentTheme = themes[palette][mode];
 
-    const toggleMode = () => setMode((prev) => (prev === "light" ? "dark" : "light"))
+    for (const [key, value] of Object.entries(currentTheme)) {
+      document.documentElement.style.setProperty(`--${key}`, value);
+    }
+  }, [mode, palette]);
 
-    //re-render the page on mode or palette change
-    //find current theme from the themes object 
-    //change style based on current value
-
-    useEffect(()=> {
-        const currentTheme = themes[palette][mode];
-    }, [mode, palette])
-
-
-    return ()
-}
-
-
-
-
-
+  return (
+    <ThemeContext.Provider value={{ mode, palette, toggleMode, setPalette }}>
+      {children}
+    </ThemeContext.Provider>
+  );
+};
