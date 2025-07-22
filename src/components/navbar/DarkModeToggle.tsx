@@ -4,8 +4,17 @@ import { useState } from "react";
 
 function DarkModeToggle(): React.JSX.Element {
   const [darkMode, setDarkMode] = useState<boolean>(true);
+  const changeMode = () => setDarkMode(!darkMode);
 
-  return <>{darkMode ? <IoMoonOutline /> : <MdWbSunny />}</>;
+  return (
+    <>
+      {darkMode ? (
+        <IoMoonOutline onClick={changeMode} />
+      ) : (
+        <MdWbSunny onClick={changeMode} />
+      )}
+    </>
+  );
 }
 
 export default DarkModeToggle;
