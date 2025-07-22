@@ -64,3 +64,5 @@ export const themes = {
     },
   },
 };
+
+export default themes;
