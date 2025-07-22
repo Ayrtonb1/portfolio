@@ -1,12 +1,12 @@
-import Language from "./Language";
-import ModeSelect from "./ModeSelect";
+import ColourSelector from "./ColourSelector";
+import DarkModeToggle from "./DarkModeToggle";
 
 function Navbar(): React.JSX.Element {
   return (
     <div className="navbar">
       <div className="navbar-name">Charles Turner</div>
-      <Language />
-      <ModeSelect />
+      <ColourSelector />
+      <DarkModeToggle />
     </div>
   );
 }
