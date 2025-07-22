@@ -95,6 +95,16 @@ button:focus-visible {
   }
 }
 
+.navbar {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+}
+
+.navbar-name {
+  width: 80%;
+}
+
 .colour-container {
   display: flex;
 }
@@ -116,5 +126,5 @@ button:focus-visible {
   background-color: #fffae3;
 }
 #c-02040F {
-  background-color: #02040f;
+  background-color: #030027;
 }
