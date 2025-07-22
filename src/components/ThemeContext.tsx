@@ -1,4 +1,4 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 import themes from "../themes";
 
 type Mode = "light" | "dark";
@@ -21,7 +21,20 @@ export const ThemeProvider = ({children}: {children: React.ReactNode}) => {
 
 
     const toggleMode = () => setMode((prev) => (prev === "light" ? "dark" : "light"))
+
+    //re-render the page on mode or palette change
+    //find current theme from the themes object 
+    //change style based on current value
+
+    useEffect(()=> {
+        const currentTheme = themes[palette][mode];
+    }, [mode, palette])
+
+
     return ()
 }
+
+
+
 
 
