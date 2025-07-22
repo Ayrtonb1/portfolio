@@ -19,6 +19,8 @@ export const ThemeProvider = ({children}: {children: React.ReactNode}) => {
     const [mode, setMode] = useState<Mode>("light");
     const [palette, setPalette] = useState<Palette>("initial")
 
+
+    const toggleMode = () => setMode((prev) => (prev === "light" ? "dark" : "light"))
     return ()
 }
 
