@@ -1,3 +1,5 @@
+import ContactForm from "./ContactForm";
+
 function Contact(): React.JSX.Element {
   return <h1>Hi from Contact</h1>;
 }
