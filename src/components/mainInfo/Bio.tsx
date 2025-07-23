@@ -10,6 +10,7 @@ function Bio(): React.JSX.Element {
         borderStyle: "solid",
         aspectRatio: "1/1",
         width: "50%",
+        minWidth: "342px",
       }}
     >
       <div style={{ fontSize: "3rem" }}>

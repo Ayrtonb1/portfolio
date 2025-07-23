@@ -9,6 +9,7 @@ function MainInfo(): React.JSX.Element {
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        // flexWrap: "wrap",
       }}
     >
       <Bio />

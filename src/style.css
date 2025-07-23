@@ -19,6 +19,18 @@
   --accentThree: #ffffff;
 }
 
+@media (max-width: 720px) {
+  .mainInfo {
+    flex-wrap: "wrap";
+    flex-direction: column-reverse;
+  }
+
+  .mainInfo > * {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+}
+
 body {
   background-color: var(--background);
   color: var(--text);

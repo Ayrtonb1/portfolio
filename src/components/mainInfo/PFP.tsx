@@ -11,6 +11,7 @@ function PFP(): React.JSX.Element {
         minHeight: "200px",
         aspectRatio: "1/1",
         overflow: "hidden",
+        minWidth: "342px",
       }}
     >
       <img
