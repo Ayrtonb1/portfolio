@@ -1,5 +1,14 @@
 function Skills(): React.JSX.Element {
-  return <h1>Hi from Skills</h1>;
+  return (
+    <div className="skills-container">
+      <div>Frontend</div>
+      <ul></ul>
+      <div>Backend</div>
+      <ul></ul>
+      <div>Tooling & Workflow</div>
+      <ul></ul>
+    </div>
+  );
 }
 
 export default Skills;
