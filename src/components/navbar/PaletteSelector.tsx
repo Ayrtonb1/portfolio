@@ -9,14 +9,14 @@ function PaletteSelector(): React.JSX.Element {
   const palettes = ["initial", "vibrant", "pastel", "green"];
 
   return (
-    <div>
+    <div style={{ position: "relative", display: "inline-block" }}>
       <FaPalette
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}
       />
       {isOpen && (
-        <div>
+        <div style={{ position: "absolute", top: "2rem" }}>
           {palettes.map((name) => (
             <button
               key={name}
