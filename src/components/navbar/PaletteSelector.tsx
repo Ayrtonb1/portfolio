@@ -9,8 +9,9 @@ function PaletteSelector(): React.JSX.Element {
   const palettes = ["initial", "vibrant", "pastel", "green"];
 
   return (
-    <div style={{ position: "relative", display: "inline-block" }}>
+    <div style={{ position: "relative", display: "flex", padding: "0 10px" }}>
       <FaPalette
+        style={{ fontSize: "1.5rem" }}
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}

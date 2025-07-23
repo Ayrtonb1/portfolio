@@ -7,8 +7,20 @@ function DarkModeToggle(): React.JSX.Element {
   const { mode, toggleMode } = useTheme();
 
   return (
-    <div onClick={toggleMode} style={{ cursor: "pointer" }}>
-      {mode === "dark" ? <IoMoonOutline /> : <MdWbSunny />}
+    <div
+      onClick={toggleMode}
+      style={{
+        cursor: "pointer",
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+      }}
+    >
+      {mode === "dark" ? (
+        <IoMoonOutline style={{ fontSize: "1.5rem" }} />
+      ) : (
+        <MdWbSunny style={{ fontSize: "1.5rem" }} />
+      )}
     </div>
   );
 }
