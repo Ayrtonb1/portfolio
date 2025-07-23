@@ -198,3 +198,29 @@ button:hover {
 .skill-item svg {
   font-size: 6rem;
 }
+
+.project-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  max-width: 1400px;
+  margin: auto;
+  gap: 1rem;
+}
+.project-tile {
+  border-style: solid;
+  aspect-ratio: 1/1;
+  margin: 0.5rem;
+
+  font-size: 1.5rem;
+}
+
+.project-tile:hover {
+  background-color: var(--text);
+  color: var(--background);
+}
+
+.project-tile > *,
+.project-tile {
+  text-align: start;
+  padding: 5px;
+}
