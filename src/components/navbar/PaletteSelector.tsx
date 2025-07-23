@@ -16,7 +16,15 @@ function PaletteSelector(): React.JSX.Element {
         }}
       />
       {isOpen && (
-        <div style={{ position: "absolute", top: "2rem" }}>
+        <div
+          style={{
+            position: "absolute",
+            top: "2rem",
+            backgroundColor: "var(--background)",
+            border: "var(--accentTwo)",
+            zIndex: 1000,
+          }}
+        >
           {palettes.map((name) => (
             <button
               key={name}
