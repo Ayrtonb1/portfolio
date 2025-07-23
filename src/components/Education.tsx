@@ -4,16 +4,16 @@ function Education(): React.JSX.Element {
       <h1>Education</h1>
       <div className="education-tiles">
         <div className="education-tile">
-          IB Diploma - Wellington International School (dates)
+          <h3>IB Diploma</h3> Wellington International School (dates)
         </div>
         <div className="education-tile">
-          BSc Biochemistry - University of Leicester
+          <h3>BSc Biochemistry</h3> University of Leicester
         </div>
         <div className="education-tile">
-          Software Development Bootcamp - Northcoders
+          <h3>Software Development Bootcamp</h3> Northcoders
         </div>
         <div className="education-tile">
-          Web Development Self Study - The Odin Project
+          <h3>Web Development Self Study</h3> The Odin Project
         </div>
       </div>
     </div>

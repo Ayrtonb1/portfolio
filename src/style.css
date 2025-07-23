@@ -127,15 +127,29 @@ button:hover {
 } */
 .education-tiles {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   max-width: 1400px;
   margin: auto;
+  gap: 1rem;
 }
 .education-tile {
-  min-width: 200px;
-  max-width: 400px;
+  /* min-width: 200px;
+  max-width: 400px; */
 
   border-style: solid;
   aspect-ratio: 1/1;
   margin: 0.5rem;
+
+  font-size: 1.5rem;
+}
+
+.education-tile:hover {
+  background-color: var(--text);
+  color: var(--background);
+}
+
+.education-tile > *,
+.education-tile {
+  text-align: start;
+  padding: 5px;
 }
