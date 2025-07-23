@@ -1,5 +1,15 @@
 function PFP(): React.JSX.Element {
-  return <h1>Hi from PFP</h1>;
+  return (
+    <div
+      style={{
+        display: "flex",
+        flexDirection: "column",
+        borderStyle: "solid",
+        width: "50%",
+        height: "100%",
+      }}
+    ></div>
+  );
 }
 
 export default PFP;

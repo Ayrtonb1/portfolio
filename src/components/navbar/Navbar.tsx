@@ -13,7 +13,12 @@ function Navbar(): React.JSX.Element {
         padding: "0 1rem",
       }}
     >
-      <div className="navbar-name">Charles Turner</div>
+      <div
+        className="navbar-name"
+        style={{ fontSize: "1.7rem", fontWeight: "600" }}
+      >
+        Charles Turner
+      </div>
       <PaletteSelector />
       <DarkModeToggle />
     </div>

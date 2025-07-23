@@ -1,5 +1,20 @@
+import Bio from "./Bio";
+import PFP from "./PFP";
+
 function MainInfo(): React.JSX.Element {
-  return <h1>Hi from MainInfo</h1>;
+  return (
+    <div
+      className="mainInfo"
+      style={{
+        display: "flex",
+        justifyContent: "center",
+        alignItems: "center",
+      }}
+    >
+      <Bio />
+      <PFP />
+    </div>
+  );
 }
 
 export default MainInfo;
