@@ -19,12 +19,15 @@ function PaletteSelector(): React.JSX.Element {
         <div>
           {palettes.map((name) => (
             <button
+              key={name}
               onClick={() => {
                 setPalette(name as typeof palette);
                 setIsOpen(false);
               }}
               style={{}}
-            ></button>
+            >
+              {name}
+            </button>
           ))}
         </div>
       )}

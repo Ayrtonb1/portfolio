@@ -110,24 +110,25 @@ button:focus-visible {
 
 .colour-container {
   display: flex;
+  border-style: solid;
 }
 .colour-example {
   height: 200px;
-  width: 200px;
+  width: 20%;
 }
 
-#c-002642 {
-  background-color: #002642;
+#c-1 {
+  background-color: var(--background);
 }
-#c-840032 {
-  background-color: #840032;
+#c-2 {
+  background-color: var(--text);
 }
-#c-E59500 {
-  background-color: #e59500;
+#c-3 {
+  background-color: var(--accentOne);
 }
-#c-E5DADA {
-  background-color: #fffae3;
+#c-4 {
+  background-color: var(--accentTwo);
 }
-#c-02040F {
-  background-color: #030027;
+#c-5 {
+  background-color: var(--accentThree);
 }
