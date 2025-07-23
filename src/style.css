@@ -154,12 +154,22 @@ button:hover {
   padding: 5px;
 }
 
-/* .skills-container {
+.skills-container {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-} */
+  justify-content: center;
+  align-items: center;
+}
 
+.skills-sub-container {
+  max-width: 1000px;
+  /* border-style: solid; */
+}
+
+.skills-heading {
+  text-align: start;
+  margin-left: 50px;
+}
 .skill-list {
   display: flex;
   flex-wrap: wrap;
