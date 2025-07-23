@@ -219,8 +219,7 @@ button:hover {
   color: var(--background);
 }
 
-.project-tile > *,
 .project-tile {
   text-align: start;
-  padding: 5px;
+  padding: 15px;
 }
