@@ -118,3 +118,24 @@ button:hover {
 #c-5 {
   background-color: var(--accentThree);
 }
+
+/* .education-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+} */
+.education-tiles {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  max-width: 1400px;
+  margin: auto;
+}
+.education-tile {
+  min-width: 200px;
+  max-width: 400px;
+
+  border-style: solid;
+  aspect-ratio: 1/1;
+  margin: 0.5rem;
+}

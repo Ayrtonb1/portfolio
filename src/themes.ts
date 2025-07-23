@@ -1,7 +1,7 @@
 export const themes = {
   initial: {
     light: {
-      background: "#FFFAE3",
+      background: "#FCFFFC",
       text: "#002642",
       accentOne: "#840032",
       accentTwo: "#E59500",

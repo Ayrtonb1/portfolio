@@ -1,5 +1,5 @@
 function Background(): React.JSX.Element {
-  return <h1>Hi from Background</h1>;
+  return <h1>My journey to date</h1>;
 }
 
 export default Background;
