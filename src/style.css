@@ -153,3 +153,38 @@ button:hover {
   text-align: start;
   padding: 5px;
 }
+
+/* .skills-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+} */
+
+.skill-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  gap: 1rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item {
+  border-style: solid;
+  width: 170px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skill-item:hover,
+.skill-item > *:hover {
+  background-color: var(--text);
+  color: var(--background);
+}
+
+.skill-item svg {
+  font-size: 6rem;
+}
