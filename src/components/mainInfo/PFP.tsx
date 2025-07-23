@@ -1,3 +1,5 @@
+import pixelImage from "../../assets/pixel.png";
+
 function PFP(): React.JSX.Element {
   return (
     <div
@@ -6,9 +8,17 @@ function PFP(): React.JSX.Element {
         flexDirection: "column",
         borderStyle: "solid",
         width: "50%",
-        height: "100%",
+        minHeight: "200px",
+        aspectRatio: "1/1",
+        overflow: "hidden",
       }}
-    ></div>
+    >
+      <img
+        style={{ borderRadius: "50%", padding: "5px" }}
+        src={pixelImage}
+        alt="image not found!"
+      />
+    </div>
   );
 }
 

@@ -8,6 +8,7 @@ function Bio(): React.JSX.Element {
         display: "flex",
         flexDirection: "column",
         borderStyle: "solid",
+        aspectRatio: "1/1",
         width: "50%",
       }}
     >
@@ -17,9 +18,16 @@ function Bio(): React.JSX.Element {
       <div style={{ fontSize: "1.4rem" }}>
         Web Developer | London | University of Leicester Graduate
       </div>
-      <div className="info-buttons">
+      <div
+        className="info-buttons"
+        style={{
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
         <button className="cv-download">Download my CV</button>
-        <FaGithub style={{ fontSize: "2rem" }} />
+        <FaGithub style={{ fontSize: "2rem", padding: "0 5px" }} />
         <FaLinkedin style={{ fontSize: "2rem" }} />
       </div>
     </div>
