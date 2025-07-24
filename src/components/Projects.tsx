@@ -4,11 +4,16 @@ function Projects(): React.JSX.Element {
       <h1>Projects</h1>
       <div className="project-tiles">
         <div className="project-tile">
-          <h3>NC News</h3> Full-stack article-based web application
+          <h3>NC News</h3> A full-stack Reddit-style news and commenting
+          platform built with React, Express, Node.js, and PostgreSQL. Features
+          include article sorting, commenting, voting, and user authentication.
+          Hosted on Render.
         </div>
         <div className="project-tile">
-          <h3>TUSE</h3> A real-time collaborative drawing web app made for my
-          Northcoders final group project.
+          <h3>TUSE</h3> A real-time collaborative drawing web app created for my
+          final Northcoders group project. Built with React, Socket.IO, and
+          Konva for canvas drawing. Includes user syncing, shape tools, and
+          undo/redo support.
         </div>
       </div>
     </div>
