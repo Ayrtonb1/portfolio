@@ -199,27 +199,68 @@ button:hover {
 
   width: 80%;
   border-style: solid;
+  margin: auto;
 }
 
 .journey-line {
   position: absolute;
+  top: 0;
+  left: 100px;
+  width: 5px;
+  height: 100%;
+  background-color: var(--accentOne);
 }
 
 .journey-timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
 }
 
 .journey-entry {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+.journey-entry:hover {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .journey-year {
+  font-size: 2.5rem;
+  color: var(--accentOne);
 }
 
 .journey-dot {
+  width: 20px;
+  height: 20px;
+  background-color: var(--accentOne);
+  border-radius: 50%;
+  animation: pulse 2px infinite;
 }
 
 .journey-content {
+  background-color: var(--background);
+  padding: 1rem;
 }
 
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale(1.3);
+    opacity: 0.6;
+  }
+
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 .education-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

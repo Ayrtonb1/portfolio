@@ -63,6 +63,22 @@ export const themes = {
       accentThree: "#2d3a3a",
     },
   },
+  bios: {
+    light: {
+      background: "#black",
+      text: "#white",
+      accentOne: "#white",
+      accentTwo: "#black",
+      accentThree: "#black",
+    },
+    dark: {
+      background: "#white",
+      text: "#black",
+      accentOne: "#white",
+      accentTwo: "#black",
+      accentThree: "#black",
+    },
+  },
 };
 
 export default themes;

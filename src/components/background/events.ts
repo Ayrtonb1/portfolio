@@ -8,7 +8,11 @@ export const events = [
     year: 2019,
     content: "Earned my BSc in Biochemistry from the University of Leicester",
   },
-  { year: 2020, content: "2020 content" },
+  {
+    year: 2020,
+    content:
+      "Moved to London seeking better opportunities, before getting sidetracked by a certain pandemic.",
+  },
   {
     year: 2021,
     content: "Worked as a laboratory analyst at the biogas startup WASE Ltd.",
