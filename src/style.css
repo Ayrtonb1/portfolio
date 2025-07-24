@@ -194,23 +194,37 @@ button:hover {
 }
 
 .journey-wrapper {
-  display: grid;
-  grid-template-columns: 40px 1fr;
+  display: flex;
+
   position: relative;
   padding: 2rem;
   gap: 2rem;
 }
 
-.journey-line {
+.journey-line-wrapper {
   position: relative;
-  grid-column: 1;
+  width: 40px;
+  flex-shrink: 0; /* don’t shrink */
+}
+.journey-line {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   width: 5px;
   background-color: var(--accentOne);
   height: 100%;
-  margin-top: 1rem;
-  margin-bottom: 1rem;
 }
-
+.journey-dot {
+  position: absolute;
+  left: -62px; /* 40px column + 5px line + 10px gap */
+  top: 0.5rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--accentOne);
+  z-index: 2;
+}
 .journey-progress {
   position: absolute;
   top: 0;
@@ -231,17 +245,6 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-}
-
-.journey-dot {
-  position: absolute;
-  left: -79px; /* 40px column + 5px line + 10px gap */
-  top: 0.5rem;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: var(--accentOne);
-  z-index: 2;
 }
 
 .pulse {

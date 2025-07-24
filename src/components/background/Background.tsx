@@ -14,10 +14,15 @@ function Background(): React.JSX.Element {
 
       const containerTop = container.offsetTop;
       const scrollY = window.scrollY + window.innerHeight;
-      const scrollProgress =
-        ((scrollY - containerTop) / container.scrollHeight) * 100;
 
-      setProgress(Math.min(100, Math.max(0, scrollProgress)));
+      const containerRect = container.getBoundingClientRect();
+
+      const scrollProgress =
+        ((window.scrollY + window.innerHeight - container.offsetTop) /
+          container.scrollHeight) *
+        100;
+
+      setProgress(Math.max(0, Math.min(100, scrollProgress)));
 
       const updatedInView = entryRefs.current.map((el) => {
         if (!el) return false;
@@ -42,25 +47,30 @@ function Background(): React.JSX.Element {
       <h1>My journey to date</h1>
 
       <div className="journey-wrapper" ref={containerRef}>
-        <div className="journey-line">
-          <div
-            className="journey-progress"
-            style={{ height: `${progress}%` }}
-          />
-        </div>
-        {events.map((event, index) => (
-          <div
-            className="journey-entry"
-            key={index}
-            ref={(el) => {
-              entryRefs.current[index] = el;
-            }}
-          >
-            <div className="journey-year"> {event.year}</div>
-            <div className={`journey-dot ${inView[index] ? "pulse" : ""}`} />
-            <div className="journey-content">{event.content}</div>
+        <div className="journey-line-wrapper">
+          <div className="journey-line">
+            <div
+              className="journey-progress"
+              style={{ height: `${progress}%` }}
+            />
           </div>
-        ))}
+        </div>
+
+        <div className="journey-entries">
+          {events.map((event, index) => (
+            <div
+              className="journey-entry"
+              key={index}
+              ref={(el) => {
+                entryRefs.current[index] = el;
+              }}
+            >
+              <div className="journey-year"> {event.year}</div>
+              <div className={`journey-dot ${inView[index] ? "pulse" : ""}`} />
+              <div className="journey-content">{event.content}</div>
+            </div>
+          ))}
+        </div>
       </div>
 
       <h3>A short intro into my timeline</h3>
