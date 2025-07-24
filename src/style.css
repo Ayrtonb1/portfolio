@@ -78,43 +78,6 @@ button {
   transition: border-color 0.25s;
   transition: background-color 0.25s;
 }
-
-.bio-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
-.FaLinkedin,
-.FaGithub {
-  transition: color 0.25s;
-}
-
-button:hover {
-  background-color: var(--accentTwo);
-  cursor: pointer;
-  /* color: var(--accentTwo); */
-}
-
-.FaLinkedin:hover,
-.FaGithub:hover {
-  border-color: var(--background);
-  /* background-color: var(--text); */
-  color: var(--accentTwo);
-  cursor: pointer;
-}
-
-.navbar {
-  display: flex;
-  align-items: center;
-  border-style: solid;
-}
-
-.navbar-name {
-  margin-right: auto;
-}
-
 .colour-container {
   display: flex;
   border-style: solid;
@@ -138,6 +101,47 @@ button:hover {
 }
 #c-5 {
   background-color: var(--accentThree);
+}
+.bio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.my-name {
+  color: var(--accentTwo);
+  text-shadow: 0 0 2px var(--accentTwo);
+}
+.FaLinkedin,
+.FaGithub {
+  transition: color 0.25s;
+}
+
+button:hover {
+  background-color: var(--accentTwo);
+  cursor: pointer;
+  /* color: var(--accentTwo); */
+}
+
+.FaLinkedin:hover,
+.FaGithub:hover {
+  border-color: var(--background);
+  /* background-color: var(--text); */
+  color: var(--accentTwo);
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  align-items: center;
+  border-style: solid;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.navbar-name {
+  margin-right: auto;
 }
 
 .pfp-wrapper {
@@ -225,7 +229,7 @@ button:hover {
 .journey-line-wrapper {
   position: relative;
   width: 40px;
-  flex-shrink: 0; /* don’t shrink */
+  flex-shrink: 0;
 }
 .journey-line {
   position: absolute;
@@ -238,7 +242,7 @@ button:hover {
 }
 .journey-dot {
   position: absolute;
-  left: -62px; /* 40px column + 5px line + 10px gap */
+  left: -62px;
   top: 2.3rem;
   width: 20px;
   height: 20px;
@@ -259,6 +263,25 @@ button:hover {
   flex-direction: column;
   gap: 3rem;
 }
+
+.journey-year {
+  font-size: 2.5rem;
+  color: var(--accentOne);
+  text-align: start;
+  padding: 1rem;
+  transition: color 1s ease, text-shadow 1s ease, transform 1s ease;
+}
+
+.year-current {
+  color: var(--accentTwo);
+  text-shadow: 0 0 2px var(--accentTwo);
+  transform: scale(1.03);
+}
+
+.year-visited {
+  color: var(--accentTwo);
+}
+
 .journey-entries {
   display: flex;
   flex-direction: column;
@@ -269,7 +292,7 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 3rem;
-  border-radius: 15px;
+  border-radius: 10px;
   padding: 5px;
   /* border-right: 3px solid var(--accentOne); */
   transition: box-shadow 0.2s ease-in-out;
@@ -283,13 +306,6 @@ button:hover {
 
 .visited {
   background-color: var(--accentTwo);
-}
-
-.journey-year {
-  font-size: 2.5rem;
-  color: var(--accentOne);
-  text-align: start;
-  padding: 1rem;
 }
 
 .journey-content {
@@ -324,6 +340,7 @@ button:hover {
 }
 .education-tile {
   border-style: solid;
+  border-radius: 30px;
   aspect-ratio: 1/1;
   margin: 0.5rem;
 
@@ -372,6 +389,7 @@ button:hover {
 
 .skill-item {
   border-style: solid;
+  border-radius: 30px;
   width: 170px;
   aspect-ratio: 1/1;
   display: flex;
@@ -399,6 +417,7 @@ button:hover {
 }
 .project-tile {
   border-style: solid;
+  border-radius: 30px;
   aspect-ratio: 1/1;
   margin: 0.5rem;
 
@@ -420,6 +439,8 @@ button:hover {
 .contact-container {
   /* min-width: 300px; */
   border-style: solid;
+  border-radius: 30px;
+  padding: 5px;
   display: flex;
   flex-direction: column;
 }

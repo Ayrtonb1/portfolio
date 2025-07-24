@@ -8,15 +8,17 @@ function Bio(): React.JSX.Element {
       style={{
         display: "flex",
         flexDirection: "column",
-        borderStyle: "solid",
-        aspectRatio: "1/1",
+        // borderStyle: "solid",
+        // aspectRatio: "1/1",
         width: "50%",
         minWidth: "342px",
         padding: "40px",
       }}
     >
       <div style={{ fontSize: "3rem", marginBottom: "20px" }}>
-        Hello, I'm Charlie. Welcome to my portfolio page
+        Hello, I'm
+        <div className="my-name">Charlie Turner.</div> Welcome to my portfolio
+        page
       </div>
       <div style={{ fontSize: "1.4rem", marginBottom: "40px" }}>
         English | Web Developer | London-based | University of Leicester

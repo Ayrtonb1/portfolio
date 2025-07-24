@@ -74,13 +74,24 @@ function Background(): React.JSX.Element {
                 entryRefs.current[index] = el;
               }}
             >
-              <div className="journey-year"> {event.year}</div>
-              {/* <div className={`journey-dot ${inView[index] ? "pulse" : ""}`} /> */}
+              <div
+                className={`journey-year ${
+                  index === currentIndex
+                    ? "year-current"
+                    : index < (currentIndex ?? -1)
+                    ? "year-visited"
+                    : ""
+                }`}
+              >
+                {" "}
+                {event.year}
+              </div>
+
               <div
                 className={`journey-dot ${
                   index === currentIndex
                     ? "pulse"
-                    : index < currentIndex
+                    : index < (currentIndex ?? -1)
                     ? "visited"
                     : ""
                 }`}
