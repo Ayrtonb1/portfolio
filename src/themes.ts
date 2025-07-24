@@ -65,18 +65,18 @@ export const themes = {
   },
   bios: {
     light: {
-      background: "#black",
-      text: "#white",
-      accentOne: "#white",
-      accentTwo: "#black",
-      accentThree: "#black",
+      background: "#ffffff",
+      text: "#000000",
+      accentOne: "#000000",
+      accentTwo: "#ffffff",
+      accentThree: "#000000",
     },
     dark: {
-      background: "#white",
-      text: "#black",
-      accentOne: "#white",
-      accentTwo: "#black",
-      accentThree: "#black",
+      background: "#000000",
+      text: "#ffffff",
+      accentOne: "#ffffff",
+      accentTwo: "#000000",
+      accentThree: "#ffffff",
     },
   },
 };

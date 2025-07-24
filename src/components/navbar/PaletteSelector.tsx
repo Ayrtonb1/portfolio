@@ -6,7 +6,7 @@ function PaletteSelector(): React.JSX.Element {
   const { palette, setPalette } = useTheme();
   const [isOpen, setIsOpen] = useState(false);
 
-  const palettes = ["initial", "vibrant", "pastel", "green"];
+  const palettes = ["initial", "vibrant", "pastel", "green", "bios"];
 
   return (
     <div style={{ position: "relative", display: "flex", padding: "0 10px" }}>
