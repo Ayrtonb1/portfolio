@@ -182,7 +182,7 @@ button:hover {
 .ring {
   position: absolute;
   border-radius: 50%;
-  border: 2px dashed transparent;
+  border: 6px dashed transparent;
   box-sizing: border-box;
   z-index: 1;
   pointer-events: none;
