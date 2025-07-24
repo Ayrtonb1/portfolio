@@ -15,6 +15,7 @@ import {
   SiSupabase,
   SiExpress,
   SiKonva,
+  SiTypescript,
 } from "react-icons/si";
 import { TbBrandVscode } from "react-icons/tb";
 import type { IconType } from "react-icons";
@@ -28,6 +29,7 @@ export const skills = {
     { name: "CSS", icon: FaCss3Alt },
     { name: "React", icon: FaReact },
     { name: "Konva", icon: SiKonva },
+    { name: "TypeScript", icon: SiTypescript },
   ],
   backend: [
     { name: "Node.js", icon: FaNodeJs },
