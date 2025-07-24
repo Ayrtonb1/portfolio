@@ -11,7 +11,7 @@ function PaletteSelector(): React.JSX.Element {
   return (
     <div style={{ position: "relative", display: "flex", padding: "0 10px" }}>
       <FaPalette
-        style={{ fontSize: "1.5rem" }}
+        style={{ fontSize: "1.5rem", cursor: "pointer" }}
         onClick={() => {
           setIsOpen((prev) => !prev);
         }}

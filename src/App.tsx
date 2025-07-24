@@ -11,19 +11,23 @@ function App(): React.JSX.Element {
   return (
     <>
       <ThemeProvider>
-        <Navbar />
-        <MainInfo />
-        <Background />
-        <Education />
-        <Skills />
-        <Projects />
-        <Contact />
-        <div className="colour-container">
-          <div className="colour-example" id="c-1"></div>
-          <div className="colour-example" id="c-2"></div>
-          <div className="colour-example" id="c-3"></div>
-          <div className="colour-example" id="c-4"></div>
-          <div className="colour-example" id="c-5"></div>
+        <div className="backdrop">
+          <div className="content-background">
+            <Navbar />
+            <MainInfo />
+            <Background />
+            <Education />
+            <Skills />
+            <Projects />
+            <Contact />
+            <div className="colour-container">
+              <div className="colour-example" id="c-1"></div>
+              <div className="colour-example" id="c-2"></div>
+              <div className="colour-example" id="c-3"></div>
+              <div className="colour-example" id="c-4"></div>
+              <div className="colour-example" id="c-5"></div>
+            </div>
+          </div>
         </div>
       </ThemeProvider>
     </>
