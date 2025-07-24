@@ -218,7 +218,7 @@ button:hover {
 .journey-dot {
   position: absolute;
   left: -62px; /* 40px column + 5px line + 10px gap */
-  top: 0.5rem;
+  top: 2.3rem;
   width: 20px;
   height: 20px;
   border-radius: 50%;
@@ -238,17 +238,25 @@ button:hover {
   flex-direction: column;
   gap: 3rem;
 }
-
+.journey-entries {
+  display: flex;
+  flex-direction: column;
+}
 .journey-entry {
   grid-column: 2;
   position: relative;
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  /* border-right: 3px solid var(--accentOne); */
 }
 
 .pulse {
   animation: pulse 2s infinite;
+}
+
+.visited {
+  background-color: var(--accentTwo);
 }
 
 .journey-entry:hover {
@@ -258,6 +266,8 @@ button:hover {
 .journey-year {
   font-size: 2.5rem;
   color: var(--accentOne);
+  text-align: start;
+  padding: 1rem;
 }
 
 /* .journey-dot:hover {
@@ -267,7 +277,9 @@ button:hover {
 .journey-content {
   background-color: var(--background);
   padding: 1rem;
-  border-left: 3px solid var(--accentOne);
+  text-align: start;
+
+  /* border-left: 3px solid var(--accentOne); */
 }
 
 @keyframes pulse {
@@ -278,7 +290,8 @@ button:hover {
 
   50% {
     transform: scale(1.3);
-    opacity: 0.6;
+    opacity: 1;
+    background-color: var(--accentTwo);
   }
 
   100% {

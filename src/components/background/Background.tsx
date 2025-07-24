@@ -7,30 +7,39 @@ function Background(): React.JSX.Element {
   const [progress, setProgress] = useState(0);
   const [inView, setInView] = useState<boolean[]>([]);
 
+  const [currentIndex, setCurrentIndex] = useState<number | null>(null);
+
   useEffect(() => {
     const onScroll = () => {
       const container = containerRef.current;
       if (!container) return;
 
-      const containerTop = container.offsetTop;
-      const scrollY = window.scrollY + window.innerHeight;
+      const containerTop = container.getBoundingClientRect().top;
+      const containerHeight = container.offsetHeight;
+      const viewportHeight = window.innerHeight;
 
-      const containerRect = container.getBoundingClientRect();
+      const distanceScrolled = viewportHeight / 2 - containerTop;
 
-      const scrollProgress =
-        ((window.scrollY + window.innerHeight - container.offsetTop) /
-          container.scrollHeight) *
-        100;
+      const clampedProgress =
+        Math.max(0, Math.min(distanceScrolled / containerHeight, 1)) * 100;
+      setProgress(clampedProgress);
 
-      setProgress(Math.max(0, Math.min(100, scrollProgress)));
+      // const updatedInView = entryRefs.current.map((el) => {
+      //   if (!el) return false;
+      //   const rect = el.getBoundingClientRect();
+      //   return rect.top < viewportHeight / 2;
+      // });
 
-      const updatedInView = entryRefs.current.map((el) => {
-        if (!el) return false;
+      let lastVisibleIndex = -1;
+      entryRefs.current.forEach((el, i) => {
+        if (!el) return;
         const rect = el.getBoundingClientRect();
-        return rect.top < window.innerHeight * 0.7;
+        if (rect.top < viewportHeight / 2) {
+          lastVisibleIndex = i;
+        }
       });
-
-      setInView(updatedInView);
+      setCurrentIndex(lastVisibleIndex);
+      // setInView(updatedInView);
     };
 
     window.addEventListener("scroll", onScroll);
@@ -66,7 +75,16 @@ function Background(): React.JSX.Element {
               }}
             >
               <div className="journey-year"> {event.year}</div>
-              <div className={`journey-dot ${inView[index] ? "pulse" : ""}`} />
+              {/* <div className={`journey-dot ${inView[index] ? "pulse" : ""}`} /> */}
+              <div
+                className={`journey-dot ${
+                  index === currentIndex
+                    ? "pulse"
+                    : index < currentIndex
+                    ? "visited"
+                    : ""
+                }`}
+              />
               <div className="journey-content">{event.content}</div>
             </div>
           ))}
