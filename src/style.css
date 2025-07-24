@@ -119,12 +119,24 @@ button:hover {
   background-color: var(--accentThree);
 }
 
-/* .education-container {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
+/* .pfp-wrapper {
+  display: "flex";
+  flex-direction: "column";
+  border-style: "solid";
+  width: "50%";
+  min-height: "200px";
+  aspect-ratio: "1/1";
+  overflow: "hidden";
+  min-width: "342px";
 } */
+/* .pfp-wrapper::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  background: conic-gradient(var(--accentOne));
+  animation: spin 10s linear infinite;
+} */
+
 .education-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -133,9 +145,6 @@ button:hover {
   gap: 1rem;
 }
 .education-tile {
-  /* min-width: 200px;
-  max-width: 400px; */
-
   border-style: solid;
   aspect-ratio: 1/1;
   margin: 0.5rem;
