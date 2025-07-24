@@ -32,12 +32,14 @@ function Bio(): React.JSX.Element {
           justifyContent: "center",
         }}
       >
-        <button
+        <a
+          href="/CTurnerCV.pdf"
+          download={true}
           className="cv-download"
           style={{ marginLeft: "5px", marginRight: "5px" }}
         >
           Download my CV
-        </button>
+        </a>
         <FaGithub
           className="FaGithub"
           style={{
