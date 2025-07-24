@@ -150,29 +150,60 @@ button:hover {
 .pfp-wrapper::before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 95%;
+  height: 95%;
   border-radius: 50%;
   padding: 10px;
-  background: conic-gradient(
+  /* background: conic-gradient(
     from 0deg,
     var(--accentOne),
     var(--accentTwo),
     var(--accentThree),
     var(--accentOne)
-  );
-  animation: spin 10s linear infinite;
+  ); */
+  /* animation: spin 6s linear infinite; */
+
+  background-color: var(--text);
   z-index: 0;
 }
 
 .pfp-wrapper img {
   z-index: 1;
-  width: 95%;
-  height: 95%;
+  width: 90%;
+  height: 90%;
   object-fit: cover;
   position: relative;
+  z-index: 2;
+  /* border-color: var(--background);
+  border-style: solid;
+  border-width: 1px; */
 }
 
+.ring {
+  position: absolute;
+  border-radius: 50%;
+  border: 2px dashed transparent;
+  box-sizing: border-box;
+  z-index: 1;
+  pointer-events: none;
+}
+
+.ring-one {
+  width: 98%;
+  height: 98%;
+  border-color: var(--accentOne);
+  border-width: 4px;
+  animation: spin 55s linear infinite;
+}
+
+.ring-two {
+  width: 94%;
+  height: 94%;
+  border-color: var(--accentTwo);
+  border-width: 4px;
+  animation: spinReverse 75s linear infinite;
+  z-index: 5;
+}
 @keyframes spin {
   0% {
     transform: rotate(0deg);
@@ -182,6 +213,14 @@ button:hover {
   }
 }
 
+@keyframes spinReverse {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg);
+  }
+}
 .education-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

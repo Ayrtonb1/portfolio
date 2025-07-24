@@ -3,6 +3,8 @@ import pixelImage from "../../assets/pixel.png";
 function PFP(): React.JSX.Element {
   return (
     <div className="pfp-wrapper">
+      <div className="ring ring-one"></div>
+      <div className="ring ring-two"></div>
       <img
         style={{ borderRadius: "50%", padding: "5px" }}
         src={pixelImage}
