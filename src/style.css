@@ -221,6 +221,11 @@ button:hover {
     transform: rotate(-360deg);
   }
 }
+
+.journey-wrapper {
+  display: flex;
+}
+
 .education-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));

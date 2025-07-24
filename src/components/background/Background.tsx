@@ -9,9 +9,10 @@ function Background(): React.JSX.Element {
         <div className="journey-line"></div>
         <div className="journey-timeline">
           {events.map((event, index) => (
-            <div key={index}>
-              {event.year}
-              {event.content}
+            <div className="journey-entry" key={index}>
+              <div className="journey-year"> {event.year}</div>
+              {/* <div></div> */}
+              <div className="journey-content">{event.content}</div>
             </div>
           ))}
         </div>
