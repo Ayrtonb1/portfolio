@@ -194,33 +194,58 @@ button:hover {
 }
 
 .journey-wrapper {
-  display: flex;
+  display: grid;
+  grid-template-columns: 40px 1fr;
   position: relative;
-
-  width: 80%;
-  border-style: solid;
-  margin: auto;
-}
-
-.journey-line {
-  position: absolute;
-  top: 0;
-  left: 100px;
-  width: 5px;
-  height: 100%;
-  background-color: var(--accentOne);
-}
-
-.journey-timeline {
-  display: flex;
-  flex-direction: column;
+  padding: 2rem;
   gap: 2rem;
 }
 
-.journey-entry {
+.journey-line {
+  position: relative;
+  grid-column: 1;
+  width: 5px;
+  background-color: var(--accentOne);
+  height: 100%;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.journey-progress {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5px;
+  background-color: var(--accentTwo);
+  z-index: 1;
+}
+.journey-timeline {
   display: flex;
   flex-direction: column;
-  align-items: end;
+  gap: 3rem;
+}
+
+.journey-entry {
+  grid-column: 2;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.journey-dot {
+  position: absolute;
+  left: -79px; /* 40px column + 5px line + 10px gap */
+  top: 0.5rem;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: var(--accentOne);
+  z-index: 2;
+}
+
+.pulse {
+  animation: pulse 2s infinite;
 }
 
 .journey-entry:hover {
@@ -232,17 +257,14 @@ button:hover {
   color: var(--accentOne);
 }
 
-.journey-dot {
-  width: 20px;
-  height: 20px;
-  background-color: var(--accentOne);
-  border-radius: 50%;
-  animation: pulse 2px infinite;
-}
+/* .journey-dot:hover {
+  animation: pulse 2s infinite;
+} */
 
 .journey-content {
   background-color: var(--background);
   padding: 1rem;
+  border-left: 3px solid var(--accentOne);
 }
 
 @keyframes pulse {
