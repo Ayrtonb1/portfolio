@@ -1,7 +1,7 @@
 function ContactForm(): React.JSX.Element {
   return (
     <>
-      <h1>Get in touch</h1>
+      <h1 className="contact-title">Get in touch</h1>
       <form className="contact-container">
         <div className="contact-upper">
           <input type="text" name="name" placeholder="Your name..." required />

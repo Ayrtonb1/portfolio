@@ -102,6 +102,10 @@ button {
 #c-5 {
   background-color: var(--accentThree);
 }
+
+.mainInfo {
+  margin-bottom: 100px;
+}
 .bio-container {
   display: flex;
   flex-direction: column;
@@ -185,8 +189,8 @@ button:hover {
 }
 
 .ring-one {
-  width: 96%;
-  height: 96%;
+  width: 98%;
+  height: 98%;
   border-color: var(--accentOne);
   border-width: 9px;
   animation: spin 55s linear infinite;
@@ -224,6 +228,7 @@ button:hover {
   position: relative;
   padding: 2rem;
   gap: 2rem;
+  margin-bottom: 150px;
 }
 
 .journey-line-wrapper {
@@ -331,11 +336,17 @@ button:hover {
     opacity: 1;
   }
 }
+
+.education-container {
+  margin-bottom: 150px;
+}
+
 .education-tiles {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   max-width: 1400px;
   margin: auto;
+  margin-top: 100px;
   gap: 1rem;
 }
 .education-tile {
@@ -366,6 +377,7 @@ button:hover {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  margin-bottom: 150px;
 }
 
 .skills-sub-container {
@@ -373,6 +385,9 @@ button:hover {
   /* border-style: solid; */
 }
 
+.skills-title {
+  margin-bottom: 100px;
+}
 .skills-heading {
   text-align: start;
   margin-left: 50px;
@@ -414,6 +429,8 @@ button:hover {
   max-width: 1400px;
   margin: auto;
   gap: 1rem;
+  margin-top: 100px;
+  margin-bottom: 150px;
 }
 .project-tile {
   border-style: solid;
@@ -455,6 +472,9 @@ button:hover {
   font-size: 1rem;
 }
 
+.contact-title {
+  margin-bottom: 100px;
+}
 .contact-lower input {
   height: 300px;
 }

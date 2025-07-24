@@ -4,7 +4,7 @@ function Skills(): React.JSX.Element {
   return (
     <div className="skills-container">
       <div className="skills-sub-container">
-        <h1>Skills</h1>
+        <h1 className="skills-title">Skills</h1>
         <h3 className="skills-heading">Frontend</h3>
         <ul className="skill-list">
           {skills.frontend.map(({ name, icon: Icon }) => (
