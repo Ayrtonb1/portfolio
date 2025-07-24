@@ -169,8 +169,8 @@ button:hover {
 
 .pfp-wrapper img {
   z-index: 1;
-  width: 90%;
-  height: 90%;
+  width: 87%;
+  height: 87%;
   object-fit: cover;
   position: relative;
   z-index: 2;
@@ -189,18 +189,18 @@ button:hover {
 }
 
 .ring-one {
-  width: 98%;
-  height: 98%;
+  width: 96%;
+  height: 96%;
   border-color: var(--accentOne);
-  border-width: 4px;
+  border-width: 9px;
   animation: spin 55s linear infinite;
 }
 
 .ring-two {
-  width: 94%;
-  height: 94%;
+  width: 91%;
+  height: 91%;
   border-color: var(--accentTwo);
-  border-width: 4px;
+  border-width: 6px;
   animation: spinReverse 75s linear infinite;
   z-index: 5;
 }
