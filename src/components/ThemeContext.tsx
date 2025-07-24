@@ -14,15 +14,15 @@ interface ThemeContextType {
 const ThemeContext = createContext<ThemeContextType | undefined>(undefined);
 
 export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
-  const [mode, setMode] = useState<Mode>("light");
-  const [palette, setPalette] = useState<Palette>("initial");
+  const [mode, setMode] = useState<Mode>(() => {
+    return (localStorage.getItem("mode") as Mode) || "light";
+  });
+  const [palette, setPalette] = useState<Palette>(() => {
+    return (localStorage.getItem("palette") as Palette) || "initial";
+  });
 
   const toggleMode = () =>
     setMode((prev) => (prev === "light" ? "dark" : "light"));
-
-  //re-render the page on mode or palette change
-  //find current theme from the themes object
-  //change style based on current value
 
   useEffect(() => {
     const currentTheme = themes[palette][mode];
@@ -30,6 +30,9 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
     for (const [key, value] of Object.entries(currentTheme)) {
       document.documentElement.style.setProperty(`--${key}`, value);
     }
+
+    localStorage.setItem("mode", mode);
+    localStorage.setItem("palette", palette);
   }, [mode, palette]);
 
   return (
