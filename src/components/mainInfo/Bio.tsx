@@ -40,19 +40,24 @@ function Bio(): React.JSX.Element {
         >
           Download my CV
         </a>
-        <FaGithub
-          className="FaGithub"
-          style={{
-            fontSize: "3rem",
-            padding: "0 5px",
-            marginLeft: "5px",
-            marginRight: "5px",
-          }}
-        />
-        <FaLinkedin
-          className="FaLinkedin"
-          style={{ fontSize: "3rem", marginLeft: "5px", marginRight: "5px" }}
-        />
+
+        <a href="https://github.com/charliewturner">
+          <FaGithub
+            className="FaGithub"
+            style={{
+              fontSize: "3rem",
+              padding: "0 5px",
+              marginLeft: "5px",
+              marginRight: "5px",
+            }}
+          />
+        </a>
+        <a href="https://www.linkedin.com/in/charles-turner-09a434142/">
+          <FaLinkedin
+            className="FaLinkedin"
+            style={{ fontSize: "3rem", marginLeft: "5px", marginRight: "5px" }}
+          />
+        </a>
       </div>
     </div>
   );

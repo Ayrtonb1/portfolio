@@ -135,17 +135,17 @@ button {
   color: var(--accentTwo);
   text-shadow: 0 0 2px var(--accentTwo);
 }
-.FaLinkedin,
-.FaGithub {
-  transition: color 0.25s;
-}
 
 button:hover {
   background-color: var(--accentTwo);
   cursor: pointer;
   /* color: var(--accentTwo); */
 }
-
+.FaLinkedin,
+.FaGithub {
+  color: var(--text);
+  transition: color 0.25s;
+}
 .FaLinkedin:hover,
 .FaGithub:hover {
   border-color: var(--background);
@@ -428,6 +428,7 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -457,6 +458,7 @@ button:hover {
   margin: 0.5rem;
 
   font-size: 1.5rem;
+  transition: color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
 }
 
@@ -539,5 +541,4 @@ textarea {
 .cv-download:hover {
   background-color: var(--accentTwo);
   cursor: pointer;
-  /* color: var(--accentTwo); */
 }
