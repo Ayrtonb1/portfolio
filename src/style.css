@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap");
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
@@ -470,14 +472,34 @@ button:hover {
 }
 
 .contact-container {
-  /* min-width: 300px; */
   border-style: solid;
   border-radius: 30px;
-  padding: 5px;
+  padding: 1rem;
+  background-color: var(--background);
   display: flex;
   flex-direction: column;
 }
 
+.contact-container > * {
+  background-color: var(--background);
+}
+
+input,
+textarea {
+  background-color: var(--background);
+  margin: 5px;
+  border-radius: 10px;
+  color: var(--text);
+  text-align: left;
+  vertical-align: top;
+  padding: 5px;
+}
+
+textarea {
+  height: 250px;
+  margin-bottom: 15px;
+  padding: 5px;
+}
 .contact-upper,
 .contact-upper > *,
 .contact-lower,
@@ -493,4 +515,8 @@ button:hover {
 }
 .contact-lower input {
   height: 300px;
+}
+
+* {
+  font-family: "Inter", sans-serif;
 }

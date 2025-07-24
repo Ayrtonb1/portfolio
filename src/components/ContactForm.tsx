@@ -13,12 +13,12 @@ function ContactForm(): React.JSX.Element {
           />
         </div>
         <div className="contact-lower">
-          <input
-            type="text"
+          <textarea
             name="message"
+            id=""
             placeholder="Your message..."
             required
-          />
+          ></textarea>
         </div>
         <button type="submit">Send</button>
       </form>
