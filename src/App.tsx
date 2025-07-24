@@ -14,12 +14,6 @@ function App(): React.JSX.Element {
         <div className="backdrop">
           <div className="content-background">
             <Navbar />
-            <MainInfo />
-            <Background />
-            <Education />
-            <Skills />
-            <Projects />
-            <Contact />
             <div className="colour-container">
               <div className="colour-example" id="c-1"></div>
               <div className="colour-example" id="c-2"></div>
@@ -27,6 +21,12 @@ function App(): React.JSX.Element {
               <div className="colour-example" id="c-4"></div>
               <div className="colour-example" id="c-5"></div>
             </div>
+            <MainInfo />
+            <Background />
+            <Education />
+            <Skills />
+            <Projects />
+            <Contact />
           </div>
         </div>
       </ThemeProvider>
