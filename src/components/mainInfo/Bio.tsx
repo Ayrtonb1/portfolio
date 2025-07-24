@@ -28,8 +28,11 @@ function Bio(): React.JSX.Element {
         }}
       >
         <button className="cv-download">Download my CV</button>
-        <FaGithub style={{ fontSize: "2rem", padding: "0 5px" }} />
-        <FaLinkedin style={{ fontSize: "2rem" }} />
+        <FaGithub
+          className="FaGithub"
+          style={{ fontSize: "3rem", padding: "0 5px" }}
+        />
+        <FaLinkedin className="FaLinkedin" style={{ fontSize: "3rem" }} />
       </div>
     </div>
   );

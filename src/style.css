@@ -42,7 +42,7 @@ h1 {
 }
 
 #app {
-  max-width: 1880px;
+  max-width: 1180px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -76,12 +76,26 @@ button {
   color: var(--text);
   cursor: pointer;
   transition: border-color 0.25s;
+  transition: background-color 0.25s;
+}
+
+.FaLinkedin,
+.FaGithub {
+  transition: color 0.25s;
 }
 
 button:hover {
+  background-color: var(--accentTwo);
+  cursor: pointer;
+  /* color: var(--accentTwo); */
+}
+
+.FaLinkedin:hover,
+.FaGithub:hover {
   border-color: var(--background);
-  background-color: var(--text);
-  color: var(--background);
+  /* background-color: var(--text); */
+  color: var(--accentTwo);
+  cursor: pointer;
 }
 
 .navbar {
@@ -248,19 +262,20 @@ button:hover {
   display: flex;
   flex-direction: column;
   gap: 3rem;
+  border-radius: 15px;
+  padding: 5px;
   /* border-right: 3px solid var(--accentOne); */
+  transition: box-shadow 0.2s ease-in-out;
 }
-
+.journey-entry:hover {
+  box-shadow: 0 1px 10px var(--accentTwo);
+}
 .pulse {
   animation: pulse 2s infinite;
 }
 
 .visited {
   background-color: var(--accentTwo);
-}
-
-.journey-entry:hover {
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .journey-year {
@@ -270,16 +285,10 @@ button:hover {
   padding: 1rem;
 }
 
-/* .journey-dot:hover {
-  animation: pulse 2s infinite;
-} */
-
 .journey-content {
   background-color: var(--background);
   padding: 1rem;
   text-align: start;
-
-  /* border-left: 3px solid var(--accentOne); */
 }
 
 @keyframes pulse {
@@ -312,11 +321,14 @@ button:hover {
   margin: 0.5rem;
 
   font-size: 1.5rem;
+
+  transition: background-color 0.2s ease-in-out;
 }
 
 .education-tile:hover {
   background-color: var(--text);
-  color: var(--background);
+
+  color: var(--accentTwo);
 }
 
 .education-tile > *,
@@ -358,12 +370,13 @@ button:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .skill-item:hover,
 .skill-item > *:hover {
   background-color: var(--text);
-  color: var(--background);
+  color: var(--accentTwo);
 }
 
 .skill-item svg {
@@ -383,11 +396,13 @@ button:hover {
   margin: 0.5rem;
 
   font-size: 1.5rem;
+  transition: background-color 0.2s ease-in-out;
 }
 
 .project-tile:hover {
   background-color: var(--text);
-  color: var(--background);
+
+  color: var(--accentTwo);
 }
 
 .project-tile {
