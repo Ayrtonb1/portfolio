@@ -50,7 +50,9 @@ function ContactForm(): React.JSX.Element {
             required
           ></textarea>
         </div>
-        <button type="submit">Send</button>
+        <button className="email-submit" type="submit">
+          Send
+        </button>
       </form>
     </>
   );

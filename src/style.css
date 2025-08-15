@@ -602,6 +602,12 @@ textarea {
   border-color: var(--text);
 }
 
+.email-submit {
+  border-width: 2px;
+  border-color: var(--text);
+  margin-top: 5px;
+}
+
 .contact-lower input {
   height: 300px;
 }
