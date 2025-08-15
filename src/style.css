@@ -470,17 +470,17 @@ button:hover {
   font-size: 1.5rem;
   transition: color 0.2s ease-in-out;
   transition: background-color 0.2s ease-in-out;
+  text-align: start;
+  padding: 15px;
+
+  text-decoration: none;
+  color: inherit;
 }
 
 .project-tile:hover {
   background-color: var(--text);
 
   color: var(--accentTwo);
-}
-
-.project-tile {
-  text-align: start;
-  padding: 15px;
 }
 
 .contact-container {
