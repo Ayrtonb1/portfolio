@@ -38,7 +38,7 @@ function ContactForm(): React.JSX.Element {
           <input
             type="text"
             name="email"
-            placeholder="Your Email..."
+            placeholder="Your email..."
             required
           />
         </div>
