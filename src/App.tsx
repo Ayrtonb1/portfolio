@@ -5,7 +5,7 @@ import Education from "./components/Education";
 import Skills from "./components/Skills";
 import Projects from "./components/Projects";
 import Contact from "./components/Contact";
-import ColourExample from "./components/ColourExample";
+
 import { ThemeProvider } from "./components/ThemeContext";
 
 function App(): React.JSX.Element {
@@ -15,7 +15,7 @@ function App(): React.JSX.Element {
         <div className="backdrop">
           <div className="content-background">
             <Navbar />
-            {/* <ColourExample /> */}
+
             <MainInfo />
             <Background />
             <Education />

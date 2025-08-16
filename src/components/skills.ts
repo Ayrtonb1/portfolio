@@ -1,4 +1,3 @@
-import type { type JSX } from "react";
 import {
   FaHtml5,
   FaCss3Alt,

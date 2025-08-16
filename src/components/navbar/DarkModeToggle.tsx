@@ -1,6 +1,6 @@
 import { MdWbSunny } from "react-icons/md";
 import { IoMoonOutline } from "react-icons/io5";
-import { useState } from "react";
+
 import { useTheme } from "../ThemeContext";
 
 function DarkModeToggle(): React.JSX.Element {

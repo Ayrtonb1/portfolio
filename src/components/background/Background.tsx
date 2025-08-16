@@ -5,7 +5,6 @@ function Background(): React.JSX.Element {
   const containerRef = useRef<HTMLDivElement>(null);
   const entryRefs = useRef<(HTMLDivElement | null)[]>([]);
   const [progress, setProgress] = useState(0);
-  const [inView, setInView] = useState<boolean[]>([]);
 
   const [currentIndex, setCurrentIndex] = useState<number | null>(null);
 
@@ -54,7 +53,7 @@ function Background(): React.JSX.Element {
   return (
     <>
       <h1>My journey to date</h1>
-      {/* <h3>A short intro into my timeline</h3> */}
+
       <div className="journey-wrapper" ref={containerRef}>
         <div className="journey-line-wrapper">
           <div className="journey-line">
