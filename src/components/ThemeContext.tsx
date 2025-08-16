@@ -17,8 +17,10 @@ export const ThemeProvider = ({ children }: { children: React.ReactNode }) => {
   const [mode, setMode] = useState<Mode>(() => {
     return (localStorage.getItem("mode") as Mode) || "light";
   });
+
   const [palette, setPalette] = useState<Palette>(() => {
-    return (localStorage.getItem("palette") as Palette) || "initial";
+    const stored = localStorage.getItem("palette") as Palette;
+    return stored && themes[stored] ? stored : "default";
   });
 
   const toggleMode = () =>

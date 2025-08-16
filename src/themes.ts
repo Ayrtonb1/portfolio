@@ -1,5 +1,5 @@
 export const themes = {
-  initial: {
+  default: {
     light: {
       background: "#FCFFFC",
       text: "#002642",

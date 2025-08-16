@@ -1,4 +1,4 @@
-import pixelImage from "../../assets/pixel.png";
+import pixelImage from "../../assets/pfp.jpg";
 
 function PFP(): React.JSX.Element {
   return (
