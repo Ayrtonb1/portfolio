@@ -1,3 +1,4 @@
+import { CgAlignCenter } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
@@ -15,12 +16,14 @@ function Bio(): React.JSX.Element {
         padding: "40px",
       }}
     >
-      <div style={{ fontSize: "3rem", marginBottom: "20px" }}>
+      <div
+        style={{ fontSize: "clamp(16px, 5vmin, 5vmin", marginBottom: "20px" }}
+      >
         Hello, I'm
         <div className="my-name">Charlie Turner.</div> Welcome to my portfolio
         page
       </div>
-      <div style={{ fontSize: "1.4rem", marginBottom: "40px" }}>
+      <div style={{ fontSize: "1.8vmin", marginBottom: "40px" }}>
         English | Web Developer | London-based | University of Leicester
         graduate
       </div>
