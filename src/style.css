@@ -54,11 +54,13 @@ body {
 
 .content-background {
   background-color: var(--background);
-  max-width: 1180px;
+  max-width: 1580px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
   padding-left: 5rem;
   padding-right: 5rem;
+  position: relative;
+  z-index: 1;
 }
 
 h1 {
@@ -176,6 +178,7 @@ button:hover {
   position: relative;
   width: 50%;
   min-width: 200px;
+  max-width: 500px;
   aspect-ratio: 1/1;
   display: flex;
   justify-content: center;
