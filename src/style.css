@@ -45,13 +45,6 @@ body {
   background-color: var(--text);
 }
 
-@media (min-width: 1280px) {
-  .backdrop {
-    padding-top: 30px;
-    padding-bottom: 30px;
-  }
-}
-
 .content-background {
   background-color: var(--background);
   max-width: 1580px;
