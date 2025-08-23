@@ -1,4 +1,3 @@
-import { CgAlignCenter } from "react-icons/cg";
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 
