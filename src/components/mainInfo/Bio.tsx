@@ -19,11 +19,11 @@ function Bio(): React.JSX.Element {
         style={{ fontSize: "clamp(16px, 5vmin, 5vmin", marginBottom: "20px" }}
       >
         Hello, I'm
-        <div className="my-name">Charlie Turner.</div> Welcome to my portfolio
+        <div className="my-name">Ayrton Burgess.</div> Welcome to my portfolio
         page
       </div>
       <div style={{ fontSize: "1.8vmin", marginBottom: "40px" }}>
-        English | Web Developer | London-based | University of Leicester
+        English | Web Developer | London-based | University of Bath
         graduate
       </div>
       <div
