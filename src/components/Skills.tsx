@@ -1,4 +1,4 @@
-import { skills } from "./skills";
+import { skills } from "./skills_icons";
 
 function Skills(): React.JSX.Element {
   return (
